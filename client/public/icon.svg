@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#1a237e"/>
+  <!-- Cross -->
+  <rect x="230" y="80" width="52" height="280" rx="4" fill="#c8a02a"/>
+  <rect x="170" y="140" width="172" height="52" rx="4" fill="#c8a02a"/>
+  <!-- Open book -->
+  <path d="M128 340 C128 320, 256 310, 256 330 L256 420 C256 400, 128 410, 128 420 Z" fill="#fdf6e3" opacity="0.9"/>
+  <path d="M384 340 C384 320, 256 310, 256 330 L256 420 C256 400, 384 410, 384 420 Z" fill="#fdf6e3" opacity="0.9"/>
+  <!-- Book spine line -->
+  <line x1="256" y1="330" x2="256" y2="420" stroke="#c8a02a" stroke-width="2"/>
+  <!-- Text lines on left page -->
+  <line x1="152" y1="355" x2="240" y2="350" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <line x1="148" y1="370" x2="242" y2="362" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <line x1="144" y1="385" x2="244" y2="374" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <!-- Text lines on right page -->
+  <line x1="272" y1="350" x2="360" y2="355" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <line x1="270" y1="362" x2="364" y2="370" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <line x1="268" y1="374" x2="368" y2="385" stroke="#1a237e" stroke-width="2" opacity="0.3"/>
+  <!-- SDG text -->
+  <text x="256" y="468" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#c8a02a" font-style="italic">Soli Deo Gloria</text>
+</svg>

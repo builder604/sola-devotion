@@ -32,7 +32,7 @@ router.get('/', (req, res) => {
     params.push(`%${search}%`, `%${search}%`);
   }
 
-  sql += ' ORDER BY CASE priority WHEN "urgent" THEN 1 WHEN "high" THEN 2 ELSE 3 END, created_at DESC';
+  sql += " ORDER BY CASE priority WHEN 'urgent' THEN 1 WHEN 'high' THEN 2 ELSE 3 END, created_at DESC";
 
   const prayers = db.prepare(sql).all(...params);
 

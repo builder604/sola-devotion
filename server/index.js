@@ -20,6 +20,12 @@ app.use('/api/push', require('./routes/push'));
 app.use('/api/reading-plan', require('./routes/readingPlan'));
 app.use('/api/settings', require('./routes/settings'));
 
+// API error handler - return JSON, not HTML
+app.use('/api', (err, req, res, next) => {
+  console.error('API error:', err);
+  res.status(500).json({ error: err.message || 'Internal server error' });
+});
+
 // Serve static files in production
 const clientDist = path.join(__dirname, '..', 'client', 'dist');
 app.use(express.static(clientDist));

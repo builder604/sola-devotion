@@ -7,10 +7,11 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "node --watch server/index.js",
     "dev:client": "cd client && npx vite --host",
+    "postinstall": "cd client && npm install",
     "build": "cd client && npx vite build",
     "start": "NODE_ENV=production node server/index.js",
     "generate-vapid-keys": "node generate-vapid-keys.js",
-    "setup": "npm install && cd client && npm install && cd .. && node generate-vapid-keys.js"
+    "setup": "npm install && node generate-vapid-keys.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
